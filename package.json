@@ -1,0 +1,20 @@
+{
+  "name": "homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "homework.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/13238006592/homework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/13238006592/homework/issues"
+  },
+  "homepage": "https://github.com/13238006592/homework#readme"
+}
