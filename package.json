@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/13238006592/homework#readme",
   "dependencies": {
-    "lodash": "^4.17.19"
+    "lodash": "^4.17.19",
+    "nodemon": "^2.0.4"
   }
 }
