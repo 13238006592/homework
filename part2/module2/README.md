@@ -37,4 +37,5 @@
     3、配置webpack.dev.js添加devtool、devServer等参数
     4、配置webpack.prod.js添加optimization配置和上线前打包需要的插件copy-webpack-plugin、clean-webpack-plugin等
     5、使用merge方法在dev、prod配置文件中引入common
+
     
