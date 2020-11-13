@@ -27,6 +27,7 @@
     ⑺然后触发了生命周期的钩子函数mounted, 挂载结束，最终返回Vue实例。
 
 2、请简述 Vue 响应式原理。
+
     Vue的响应式是从Vue的实例init()方法中开始的，在init()方法中先调用initState()初始化Vue实例的状态，在initState方法中调用了initData()， initData()是把data属性注入到Vue实例上，并且调用observe(data)将data对象转化成响应式的对象。
 
     observe是响应式的入口, 在observe(value)中，首先判断传入的参数value是否是对象，如果不是对象直接返回。再判断value对象是否有__ob__这个属性，如果有说明做过了响应式处理，则直接返回，如果没有，创建observer对象，并且返回observer`对象。
@@ -46,6 +47,7 @@
     触发updated钩子函数
 
 3、请简述虚拟 DOM 中 Key 的作用和好处。
+
     在v-for的过程中，为给每一个节点设置key属性的作用：
         以便它能够跟踪每个节点的身份，在进行比较的时候，会基于 key 的变化重新排列元素顺序。从而重用和重新排序现有元素，并且会移除 key 不存在的元素。方便让 vnode 在 diff 的过程中找到对应的节点，然后成功复用。
 
@@ -53,6 +55,7 @@
         可以减少 dom 的操作，减少 diff 和渲染所需要的时间，提升了性能。
 
 4、请简述 Vue 中模板编译的过程。
+
     缓存公共的 mount 函数，并重写浏览器平台的 mount
     判断是否传入了 render 函数，没有的话，是否传入了 template ，没有的话，则获取 el 节点的 outerHTML 作为 template
     调用 baseCompile 函数
