@@ -19,6 +19,7 @@
   "homepage": "https://github.com/13238006592/homework#readme",
   "dependencies": {
     "lodash": "^4.17.19",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "nuxt": "^2.14.7"
   }
 }
