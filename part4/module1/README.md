@@ -1,6 +1,6 @@
 # homework
 一、简答题
-1. 请简述 React 16 版本中初始渲染的流程
+1. 请简述 React 16 版本中初始渲染的流程。
 答：1. jsx 转换成 react 元素
             babel-react 会将jsx 调用 React.createElement
             React.createElement 会 jsx 转换成 react element （react element 就是 一个用来描述react 元素的对象。）
@@ -57,4 +57,3 @@
 
 4. 请简述 workInProgress Fiber 树存在的意义是什么
     答：实现双缓存技术, 在内存中构建 DOM 结构以及 DOM 更新, 在 commit 阶段实现 DOM 的快速更新.
-        
