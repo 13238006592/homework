@@ -1,6 +1,6 @@
 # homework
 一、简答题
-1. 请简述 React 16 版本中初始渲染的流程。
+<br/>1. 请简述 React 16 版本中初始渲染的流程。</br>
 答：1. jsx 转换成 react 元素
             babel-react 会将jsx 调用 React.createElement
             React.createElement 会 jsx 转换成 react element （react element 就是 一个用来描述react 元素的对象。）
@@ -20,12 +20,12 @@
         根据 fiber 中的 effectTag 属性进行相应的 DOM 操作
 
 
-2. 为什么 React 16 版本中 render 阶段放弃了使用递归
+<br/>2. 为什么 React 16 版本中 render 阶段放弃了使用递归</br>
     答：递归是在调用栈中执行的，没办法终止，长时间的递归操作占用了主进程，会导致用户界面卡顿，影响用户体验
         React 16增加了任务队列，将渲染操作拆分为细小的单元利用浏览器空余时间执行，提升了用户体验
 
 
-3. 请简述 React 16 版本中 commit 阶段的三个子阶段分别做了什么事情
+<br/>3. 请简述 React 16 版本中 commit 阶段的三个子阶段分别做了什么事情</br>
     答：(1)before mutation阶段（执行DOM操作前）:处理类组件的getSnapShotBeforeUpdate 生命周期函数
             处理DOM节点渲染/删除后的 autoFocus、blur逻辑；
             调用getSnapshotBeforeUpdate生命周期钩子；
@@ -55,5 +55,5 @@
             获取DOM实例，更新ref5.current Fiber树切换(workInProgress Fiber树在commit阶段完成渲染后会变为current Fiber树)。
 
 
-4. 请简述 workInProgress Fiber 树存在的意义是什么
+<br/>4. 请简述 workInProgress Fiber 树存在的意义是什么</br>
     答：实现双缓存技术, 在内存中构建 DOM 结构以及 DOM 更新, 在 commit 阶段实现 DOM 的快速更新.
