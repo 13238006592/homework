@@ -34,7 +34,6 @@
             如果该fiber类型是ClassComponent的话，执行getSnapshotBeforeUpdate生命周期api，将返回的值赋到fiber对象的__reactInternalSnapshotBeforeUpdate上；
             如果该fiber类型是FunctionComponent的话，执行hooks上的effect相关 API。
         代码层面：
-
             根据ContentReset effectTag重置文字节点；
             更新ref；
             根据effectTag分别处理，其中effectTag包括(Placement | Update | Deletion | Hydrating)；
@@ -43,11 +42,8 @@
             (opens new window)生命周期钩子，从页面移除Fiber节点对应DOM节点解绑ref调度useEffect的销毁函数。
         (3)layout（执行 DOM 操作后）：commitHookEffectList()阶段，调用类组件生命周期函数或者函数组件的钩子函数
             ffect生成effect链，具体请看ReactFiberHooks.js中的pushEffect()
-
             ponentDidMount/componentWillUnmount）
-
         代码层面：
-
             调用componentDidxxx；
             调用this.setState第二个参数回调函数；
             调用useLayoutEffect hook的回调函数(与mutation的销毁函数是同步的)，调度useEffect的销毁与回调函数(在before
