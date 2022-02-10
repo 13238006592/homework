@@ -41,7 +41,7 @@
     "gulp-sass": "^4.1.0",
     "gulp-swig": "^0.9.1",
     "jquery": "3.4.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "popper.js": "1.16.1"
   },
   "devDependencies": {
